@@ -1,0 +1,28 @@
+.userform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: grey;
+    height: 400px;
+    padding-right: 20px;
+    width: 300px;
+    font-weight: 700;
+}
+.allform{
+    display: flex;
+    flex-direction: column;
+}
+
+.showData{ 
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    /* height: 100px; */
+    width: 300px;
+    font-size: larger;
+    background-color: lightgoldenrodyellow;
+    font-weight: 700;
+}

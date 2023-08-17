@@ -1,0 +1,19 @@
+
+.navbar-expand-lg{
+    width: 100%; 
+    background-color: lightcoral; 
+    font-size: larger;
+    font-weight: 600;
+}
+.navbar-expand-lg a, li{
+    color: white;
+}
+ul.dropdown-menu.show{
+    background: transparent;
+}
+button.navbar-toggler{
+    color: white;
+}
+button.navbar-toggler.collapsed{
+    color: white;
+}

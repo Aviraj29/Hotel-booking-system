@@ -1,0 +1,113 @@
+.reservation_tag {
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 10px ;
+    font-size: 40px;
+    font-family :'Times New Roman', Times, serif;
+    color: rgb(5, 5, 157);
+}
+.reservation_section{
+    background-color: rgb(215, 215, 244);
+    width: 800px;
+    height: 600px;
+    /* margin-left: 350px; */
+    /* margin-top: 30px; */
+    margin: 20px auto;
+}
+ 
+
+/* place and hotel section css starts here */
+.from-section {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-family :'Times New Roman', Times, serif;
+}
+.tag-section{
+
+    margin-bottom: 20px;
+    margin-top: 36px;   
+}
+.select-form{
+    margin-left: 35px;
+    width: 600px;
+    height: 50px;
+}
+/* place and hotel section css ends here */
+
+
+/* From(Date) css starts here */
+.contain-section{
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-family :'Times New Roman', Times, serif;
+    margin-top: 40px;
+    margin-left:60px;
+   
+}
+.row-date{
+    margin-left: 35px;
+}
+
+
+/* room css starts here */
+ .row-span {
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    margin-top: 20px;
+margin-left: 133px;
+    }
+      .item_handle {
+        font-size: x-large;
+        font-family :'Times New Roman', Times, serif;
+       margin-left: 30px;  
+    }
+    .item_handle  .handle-count{
+        display: flex;
+        flex-direction: row;
+        
+    }
+.count-item {
+   width: 50px;
+   height: 50px;
+    background-color: white;
+padding: 10px;
+}
+/* room css ends here */
+
+
+
+/* promo code and check availability css starts here */
+
+.count-button{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+   
+    /* background-color: rgb(188, 184, 184); */
+}
+.count-button:hover{
+    background-color: rgb(232, 226, 226);
+  
+}
+.input-group{
+    margin-top: 60px;
+    margin-left: 150px;
+   
+}
+.button-item {
+    width: 280px;
+    color: rgb(96, 4, 96);
+    background-color: rgb(252, 173, 185);
+    font-size: x-large;
+    font-family :'Times New Roman', Times, serif;
+    
+}
+.button-item:hover{
+    background-color:  rgb(246, 127, 147);
+    
+}
+/* promo code and check availability css ends here */
