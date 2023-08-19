@@ -1,7 +1,7 @@
    const rooms = [
     {
         id:1,
-        image:'/images/family-room.webp',
+        image:'/images/rooms/family-room.webp',
         name:'Family Basic',
         type:'Family',
         price:1600,
@@ -11,7 +11,7 @@
     },
     {
         id:2,
-        image:'/images/non-ac-room.webp',
+        image:'/images/rooms/non-ac-room.webp',
         name:'Family Standard',
         type:'Family',
         price:2000,
@@ -21,7 +21,7 @@
     }, 
     {
         id:8,
-        image:'/images/family-room.webp',
+        image:'/images/rooms/family-room.webp',
         name:'Family Economy',
         type:'Family',
         price:1800,
@@ -31,7 +31,7 @@
     },
     {
         id:3,
-        image:'/images/delux-room.webp',
+        image:'/images/rooms/delux-room.webp',
         name:'Delux Standard',
         type:'Delux',
         price:2600,
@@ -41,7 +41,7 @@
     },
     {
         id:4,
-        image:'/images/ac-room.webp',
+        image:'/images/rooms/ac-room.webp',
         name:'Delux Economy',
         type:'Delux',
         price:2400,
@@ -51,7 +51,7 @@
     },
     {
         id:5,
-        image:'/images/superior-room.webp',
+        image:'/images/rooms/superior-room.webp',
         name:'Superior Prime',
         type:'Superior',
         price:4000,
@@ -61,7 +61,7 @@
     },
     {
         id:6,
-        image:'/images/superior-room.webp',
+        image:'/images/rooms/superior-room.webp',
         name:'Superior Elite',
         type:'Superior',
         price:4200,
@@ -71,7 +71,7 @@
     },
     {
         id:7,
-        image:'/images/ac-room.webp',
+        image:'/images/rooms/ac-room.webp',
         name:'Presidential Luxurious',
         type:'Presidential',
         price:5000,

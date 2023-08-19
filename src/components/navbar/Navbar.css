@@ -17,3 +17,6 @@ button.navbar-toggler{
 button.navbar-toggler.collapsed{
     color: white;
 }
+.nav-item{
+    color: white;
+}

@@ -36,6 +36,15 @@ const navigate = useNavigate()
         <li className="nav-item">
           <Link to="/event" className="nav-link " aria-current="page" >Event</Link>        
         </li> 
+        <li className="nav-item">
+          <Link to="/contact" className="nav-link " aria-current="page" >Contact us</Link>        
+        </li> 
+        <li className="nav-item">
+          <Link to="/review" className="nav-link " aria-current="page" >Review</Link>        
+        </li>
+        <li className="nav-item">
+          <Link to="/about" className="nav-link " aria-current="page" >About us</Link>        
+        </li>
       </ul>
       
       <button onClick={()=>navigate('/login')} className="btn btn-outline-success" type="submit">Login</button>

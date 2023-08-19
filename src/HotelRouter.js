@@ -7,13 +7,17 @@ import RoomsFilter from './components/rooms-page/RoomsFilter'
 // import Header from './components/header/Header'
 import Home from './components/Home'
 import SelectedRoomPage from './components/rooms-page/SelectedRoomPage'
-import Promotions from './components/Promotions'
-import Reservation from './components/Reservation'
+import Reservation from './components/Reservation/Reservation'
 import OfferRoomPage from './components/rooms-page/OfferRoomPage'
 import Header from './components/header/Header'
 import LogIn from './components/login/LogIn'
 import SpecialEvent from './components/event/SpecialEvent'
 import EventForm from './components/event/EventForm'
+import Promotions from './components/offer/Promotions'
+import ContactForm from './components/contact_form/ContactForm'
+// import HotelBookingPage from './components/review/Reviews'
+import Reviews from './components/review/Reviews'
+import About from './components/about/About'
 
 
 export default function HotelRouter() {
@@ -34,6 +38,11 @@ export default function HotelRouter() {
         <Route path="/offer/selected-room" element={<OfferRoomPage/>} />
         <Route path='/event' element={<SpecialEvent/>}/>
         <Route path='/eventform' element={<EventForm/>}/>
+        <Route path='/contact' element={<ContactForm/>}/>
+        <Route path='/review' element={<Reviews/>}/>
+        <Route path='/about' element={<About/>}/>
+
+
 
          
       </Route>

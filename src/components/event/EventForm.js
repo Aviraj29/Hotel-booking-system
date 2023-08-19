@@ -24,7 +24,7 @@ export default function EventForm() {
   return (
    <>
    
- <div className="event-cont container-fluid  ">
+ <div className="event-cont container  ">
 
 <h1>Contact an Event Planner</h1>
 
@@ -89,11 +89,11 @@ required: 'please enter a valid Number Of Guests'
             <h3 className='event-title'>Additional Requirements </h3>
             <div className="col-form-label ">
 <input type="checkbox" id="req1" name="req1" value="accomodation"/>  &nbsp;
-<label for="req1"> Accomodation</label><br/>
+<label htmlFor="req1"> Accomodation</label><br/>
 <input type="checkbox" id="req2" name="req2" value="banquet"/>  &nbsp;
-<label for="req2"> Banquet</label><br/>
+<label htmlFor="req2"> Banquet</label><br/>
 <input type="checkbox" id="req3" name="req3" value="audio"/>  &nbsp;
-<label for="req3"> Sound & Audio</label>
+<label htmlFor="req3"> Sound & Audio</label>
 </div> 
 
 

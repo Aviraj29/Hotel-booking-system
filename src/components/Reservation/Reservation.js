@@ -124,7 +124,7 @@ export default function Reservation() {
 
 
 {/* promo code and check availability section starts here */}
-      <div className="input-group ">
+      <div className="input-group1">
         <input type="text" placeholder=" Enter Promo Code" style={{textAlign:"center", width:270, borderRadius:6 , fontSize:18, borderColor:"lightblue"}} />
         &nbsp;&nbsp;
         <button onClick={handleCheck} className="button-item " type="button" style={{borderRadius:6,}}>

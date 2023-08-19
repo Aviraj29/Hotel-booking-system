@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+// import About from './components/about/About';
 // import Comment1 from './components/faq/Comment1';
 // import Comment from './components/faq/Comments';
 // import Qfinal from './components/faq/Qfinal';
@@ -17,6 +18,10 @@ import './App.css';
 // import Navbar from './components/navbar/Navbar'
 // import Rooms from './components/room-card/Rooms';
 import HotelRouter from './HotelRouter';
+// import Footer from './components/footer/Footer';
+// import HotelBookingPage from './components/review/HotelBookingPage';
+// import ContactForm from './components/contact_form/ContactForm';
+// import Icon from './components/services/Icon';
 // import EventForm from './components/event/EventForm';
 // import SpecialEvent from './components/event/SpecialEvent';
 
@@ -25,7 +30,7 @@ function App() {
     <>
     <HotelRouter/>
 
-    {/* <Header/> */}
+    {/* <Header/> */}  
     {/* <Navbar/> */}
     {/* <Bookingcard/> */}
     {/* <Rooms/> */}
@@ -40,6 +45,12 @@ function App() {
     {/* <Rating/> */}
     {/* <EventForm/> */}
     {/* <SpecialEvent/> */}
+    {/* <ContactForm/> */}
+    {/* <HotelBookingPage/> */}
+    {/* <Footer/> */}
+    {/* <About/> */}
+    
+  
 
 
     </>

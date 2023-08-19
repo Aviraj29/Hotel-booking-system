@@ -14,7 +14,7 @@ const offerData = [
     image: '/images/offer/summer-offer.jpg',
     price:3500,
         guests:4,
-        size:455,
+        size:455, 
         availableroom:3
   },
 
