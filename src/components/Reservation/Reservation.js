@@ -24,7 +24,7 @@ export default function Reservation() {
 
   const handelIncrement = () => {
     setCount(count + 1);
-  };
+  }; 
   const handleDecrement = () => {
     if (count > 0) {
       setCount(count - 1);
