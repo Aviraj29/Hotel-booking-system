@@ -31,7 +31,7 @@ function App() {
     <HotelRouter/>  
 
     {/* <Header/> */}  
-    {/* <Navbar/> */}
+    {/* <Navbar/> */} 
     {/* <Bookingcard/> */}
     {/* <Rooms/> */}
     {/* <RoomsFilter/> */}
