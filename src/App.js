@@ -37,7 +37,7 @@ function App() {
     {/* <RoomsFilter/> */}
     {/* <FromsR/> */}
     {/* <Reservation/> */}
-    {/* <Promotions/> */}
+    {/* <Promotions/> */} 
     {/* <Gallery/> */}
     {/* <About/> */}
     {/* <LogIn/> */}
