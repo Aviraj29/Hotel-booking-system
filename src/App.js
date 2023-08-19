@@ -28,7 +28,7 @@ import HotelRouter from './HotelRouter';
 function App() {
   return (
     <>
-    <HotelRouter/>  
+    <HotelRouter/>   
 
     {/* <Header/> */}  
     {/* <Navbar/> */} 
