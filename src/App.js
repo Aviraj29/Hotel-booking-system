@@ -4,7 +4,7 @@ import './App.css';
 // import Comment1 from './components/faq/Comment1';
 // import Comment from './components/faq/Comments';
 // import Qfinal from './components/faq/Qfinal';
-// import Rating from './components/faq/Rating';
+// import Rating from './components/faq/Rating'; 
 // import LogIn from './components/login/LogIn';
 // import About from './components/about/About';
 // import Promotions from './components/Promotions';

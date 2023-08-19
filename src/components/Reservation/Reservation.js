@@ -11,8 +11,8 @@ export default function Reservation() {
   console.log('Current Date:'+ currentDate);
   const [count, setCount] = useState(0);
   const [counter, setCounter] = useState(0);
-  const [selectedFromDate, setSelectedFromDate] = useState(currentDate);
-  const [selectedToDate, setSelectedToDate] = useState(nextDate1);
+  const [selectedFromDate, setSelectedFromDate] = useState(currentDate);  
+  const [selectedToDate, setSelectedToDate] = useState(nextDate1); 
   
 
   const navigate = useNavigate();
