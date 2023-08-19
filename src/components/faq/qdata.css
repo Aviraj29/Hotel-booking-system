@@ -1,0 +1,19 @@
+*{
+    text-align: center;
+    /* background-color: pink; */
+    
+} 
+button{
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: palevioletred;
+}
+.outer{
+    border: solid 1px;
+    height: 250px;
+    padding: 50px;
+    box-shadow: 5px 10px grey;
+    background-color: pink;
+}

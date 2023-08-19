@@ -1,0 +1,141 @@
+.offer-card {     
+  display: flex;
+  flex-direction: column;   
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;        
+  margin: 2px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.offer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offer-image-container {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+ 
+.offer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.offer-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.room-details {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.offer-description {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.offer-details ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+  color: #555;
+}
+.offer-details li{
+  color: #555;
+
+
+}
+
+.offer-discount {                  
+  font-size: 1rem;
+  color: #ff9900;
+  margin-top: 10px;         
+}
+
+.promo-code {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 5px;
+}
+
+.book-now-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.book-now-button:hover {
+  background-color: #2980b9;
+}
+
+
+.promotions-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.promotions-section h2{
+  font-size: 40px;
+}
+
+.promotions-section h1{                      
+  font-size: 35px;
+}
+
+.promotion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

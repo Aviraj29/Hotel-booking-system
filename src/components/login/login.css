@@ -1,0 +1,61 @@
+ 
+/* *{
+    background-color: #f7accf;
+background-image: linear-gradient(147deg, #f7accf 0%, #ff1053 74%);
+} */
+
+#log {
+    /* margin: 50px; */
+    /* margin: 400px; */
+    /* padding: 10%; */
+    /* padding: 200px; */
+    border: solid 2px;
+    width: 400px;
+    height: 400px;
+    border-radius: 5%;
+    border: center;
+    margin-top: 10px;
+    /* border-spacing: 10px; */
+    text-align: center;
+    display: flex;
+    flex: wrap;
+    border-color: #923993;
+    flex-direction: column;
+    margin: 100px auto;
+    /* align-content: space-around; */
+    align-items: center;
+    justify-content: space-around;
+}
+.sign-input{
+    border-radius: 6px;
+    width: 150px;
+    height: 30px;
+    align-self: center;
+     }
+.sign-label,.signin{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    border-radius: 6px;
+    
+}
+.signin{
+    background-color: #50d8d7;
+    background-image: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+    /* background-color: #663dff;
+background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%); */
+/* background-color: RGB(183,132,167); */
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    align-self: center;
+    
+}
+.sign-show{
+    display: flex;
+    /* align-self: center; */
+    justify-content: space-around;
+}
+.form-check-input{
+    float:left;
+}

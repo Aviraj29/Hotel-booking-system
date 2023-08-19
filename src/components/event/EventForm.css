@@ -1,0 +1,46 @@
+
+.col-form-label{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+} 
+.form-group input{
+    width: 80vh;
+    height: 5vh;
+    margin-top: 4px;
+    background-color: rgb(234, 234, 234);
+    font-size: large;
+
+}
+.col-form-label{  
+    margin-top: 6px; 
+}
+.event-opt{
+width: 65vh;
+height: 5vh;
+background-color:#dee2e6;
+font-size: large;
+}
+.event-title{
+    color: #9d5a08;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+ .event-button button{
+    width: 10%;
+    align-items: center;
+    margin-top: 40px;
+    border-radius: 8px;
+    font-size: large;
+    text-transform: uppercase;
+    color: white;
+    background-color: #d29851;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.queries-con  :hover{
+    cursor: pointer;
+    color: #9d5a08;
+
+}
