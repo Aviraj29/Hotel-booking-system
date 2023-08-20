@@ -18,6 +18,7 @@ import ContactForm from './components/contact_form/ContactForm'
 // import HotelBookingPage from './components/review/Reviews'
 import Reviews from './components/review/Reviews'
 import About from './components/about/About'
+import PaymentForm from './components/payment/PaymentForm'
 
 
 export default function HotelRouter() {
@@ -28,6 +29,8 @@ export default function HotelRouter() {
         <Route path='/' element={<OnlyHeader/>}/>
 
         <Route path='/login' element={<LogIn/>}/>
+        <Route path='/payment' element={<PaymentForm/>}/>
+
          
         <Route path='/' element={<Navbar/>}>    
         <Route path='/res' element={<Reservation/>}/>
@@ -41,9 +44,6 @@ export default function HotelRouter() {
         <Route path='/contact' element={<ContactForm/>}/>
         <Route path='/review' element={<Reviews/>}/>
         <Route path='/about' element={<About/>}/>
-
-
-
          
       </Route>
     </Routes>

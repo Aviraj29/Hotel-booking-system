@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function SelectedRoomPage(){
   const location = useLocation();
@@ -7,6 +7,7 @@ export default function SelectedRoomPage(){
   const selectedFromDate = location.state?.selectedFromDate;
   const selectedToDate = location.state?.selectedToDate;
   const daysOfStay = location.state?.daysOfStay || 1;
+  const navigate = useNavigate()
 
   // const selectedOffer = location.state?.selectedOffer;
 
@@ -29,10 +30,10 @@ export default function SelectedRoomPage(){
     }
   };
 
-  const totalPrice = selectedRoom.price * roomCount *daysOfStay;
-  // const totalPriceBeforeDiscount = selectedRoom.price * roomCount;
-  // const discountAmount = (totalPriceBeforeDiscount * selectedRoom.discount) / 100;
-  // const totalPriceAfterDiscount = totalPriceBeforeDiscount - discountAmount;
+  const totalAmount = selectedRoom.price * roomCount *daysOfStay;
+  // const totalAmountBeforeDiscount = selectedRoom.price * roomCount;
+  // const discountAmount = (totalAmountBeforeDiscount * selectedRoom.discount) / 100;
+  // const totalAmountAfterDiscount = totalAmountBeforeDiscount - discountAmount;
 
   return (
     <>
@@ -54,6 +55,7 @@ export default function SelectedRoomPage(){
       <h3>{selectedRoom.description}</h3>
       {/* <ul>{selectedRoom.details.map((detail,index) =><li key={index} style={{color: 'grey'}}>{detail}</li>)}</ul> */}
       </div>
+
       <div className="col md-4 right">
         <div className="padding">
         <h5 style={{textAlign:'center'}}>Price detail</h5>
@@ -70,9 +72,12 @@ export default function SelectedRoomPage(){
         {/* <p>Discount: {selectedRoom.discount}%</p> */}
         </div>
         <div className='spacebetween' style={{paddingTop:10 , paddingLeft:5, paddingRight:5, backgroundColor:'lightgrey'}}>
-        <h5>Total Amount to be paid:</h5> <h6 style={{fontWeight:700}} >₹ {totalPrice}/-</h6></div>
-        
+        <h5>Total Amount to be paid:</h5> <h6 style={{fontWeight:700}} >₹ {totalAmount}/-</h6></div>
         </div>
+        </div>
+
+        <div className="guest-f mt-3">
+      <button className='btn btn-success selected-button' onClick={()=>navigate('/payment', { state: { totalAmount } })}>Continue</button>
         </div>
     </div>
     </>

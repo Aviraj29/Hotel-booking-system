@@ -1,0 +1,338 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:ital,wght@1,300&family=Roboto:wght@400;500&display=swap');
+
+
+.payment-form {
+  width: 700px;                    
+  margin: 0 auto;
+  padding: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* background-color: #f7f7f7; */
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  padding-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.payment-h2 {
+  margin-top: -52px;
+  padding-bottom: 17px;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+.input-group {
+  margin-bottom: 20px;  
+  width: 260px;
+}
+
+.payment-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 13px;
+  margin-top: 15px;
+  /* font-family: 'Lato', sans-serif; */
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+ 
+}         
+
+/* Centered button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pay-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;  
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 40px;
+  align-items: center;
+  margin-bottom: 25px;  
+  
+  position: relative;
+  right: -150px;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  background-color: #28a745; 
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+  border: 1px solid #1e7e34;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clear-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hidden-form {
+  display: none;
+}
+
+/* Scrollspy content */
+.scrollspy-content {
+  margin-top: 40px;
+  width: 320px;
+}
+
+.scrollspy-content > div {
+  display: none;
+  padding: 10px;
+}
+
+.scrollspy-content > div.active {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.nav {
+  position: sticky;
+  top: 20px;
+}
+
+.payment-options .list-group-item {
+  display: flex;
+  align-items: center;
+}
+
+.payment-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.card-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #5e5e5e;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: black;
+}  
+
+.benefits-icon {
+  margin-right: 10px;
+  color: #0c723e;
+}
+
+.all {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.all.active {
+  background-color: #007bff;
+  color: #fff;
+  border-color: #007bff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #f5f5f5; 
+} 
+
+.all:hover {
+  background-color: #f0f0f0;
+  color: #007bff;
+}
+
+.payment-image {
+   width: 20px;
+   height: 20px; 
+  margin-right: 10px;
+}
+
+.upi-instructions {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.upi-instructions li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.upi-instructions li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #007bff; 
+}
+
+.or-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-top: 60px;
+}
+
+.scan-image {
+  margin: 0 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.bank-options {
+  display: flex;
+  align-items: center;
+}
+
+.bank-icon {
+  width: 40px; 
+  height: 40px;
+  margin-right: 10px;
+}
+
+.pay-later-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 19px
+}
+
+.pay-later-button:hover {
+  background-color: #0056b3;
+}
+
+.pay-later-message {
+  background-color: #f0f0f0;
+  color: #4f3eec;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.price-message {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #f39c12; 
+  text-align: center;
+  margin: auto;
+  margin-top: 48px;
+}
+
+
+.terms-conditions {
+  margin-top: 0px;
+  font-size: 14px;
+  color: #555; 
+}
+
+.terms-conditions ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.terms-conditions ul li {
+  margin-bottom: 5px;
+  color: black;
+}
+
+.terms-conditions hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.card-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  width: 560px;
+}
+
+.card-image {
+  width: 50px;
+  height: 30px;
+  margin: 0 10px;
+  transition: transform 0.2s, filter 0.2s;
+
+}
+
+.card-image:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+
+.group-flex {
+  display: flex;
+  width: 600px;
+  flex-direction: row;
+}
+
+
+

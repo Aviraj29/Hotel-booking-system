@@ -47,7 +47,7 @@ const navigate = useNavigate()
         </li>
       </ul>
       
-      <button onClick={()=>navigate('/login')} className="btn btn-outline-success" type="submit">Login</button>
+      <button onClick={()=>navigate('/login')} className="btn btn-success" type="submit">Login</button>
      
     </div>
   </div>

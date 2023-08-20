@@ -33,9 +33,9 @@
   cursor: pointer;
   color: #ddd;
   margin-right: 5px;
-}
+} 
 
-.active {
+.active-s {
   color:green;
 }
 

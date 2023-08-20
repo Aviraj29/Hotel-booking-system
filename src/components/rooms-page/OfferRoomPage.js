@@ -1,11 +1,12 @@
 import React,{useState} from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export default function OfferRoomPage(){
   const location = useLocation();
   const selectedOffer = location.state?.selectedOffer;
 
   const [roomCount, setRoomCount] = useState(1);
+  const navigate = useNavigate()
 
   if (!selectedOffer) {
     return <div>No room selected.</div>;
@@ -56,8 +57,11 @@ export default function OfferRoomPage(){
         </div>
         <div className='spacebetween' style={{paddingTop:10 , paddingLeft:5, paddingRight:5, backgroundColor:'lightgrey'}}>
         <h5>Total Amount to be paid:</h5> <h6 style={{fontWeight:700}} >₹ {totalPriceAfterDiscount}/-</h6></div>
-        
         </div>
+        </div>
+
+        <div className="guest-f mt-3">
+      <button className='btn btn-success selected-button' onClick={()=>navigate('/payment', { state: { totalPriceAfterDiscount } })}>Continue</button>
         </div>
     </div>
     </>

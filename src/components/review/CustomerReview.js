@@ -59,7 +59,7 @@ import './CustomerReview.css';
         {[1, 2, 3, 4, 5].map((starValue) => (  
           <FaStar
             key={starValue}  
-            className={starValue <= rating ? 'star active' : 'star'} 
+            className={starValue <= rating ? 'star active-s' : 'star'} 
 
             onClick={() => handleRatingChange(starValue)}       // {/* */}
           />
