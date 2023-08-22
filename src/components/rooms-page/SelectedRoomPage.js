@@ -77,6 +77,38 @@ export default function SelectedRoomPage(){
         </div>
 
         <div className="guest-f mt-3">
+        
+        <form className="row g-3">
+  <div className="col-md-6">
+    <label for="validationDefault01" className="form-label">First name</label>
+    <input type="text" className="form-control" id="validationDefault01" value="" required/>
+  </div>
+  <div className="col-md-6">
+    <label for="validationDefault02" className="form-label">Last name</label>
+    <input type="text" className="form-control" id="validationDefault02" value="" required/>
+  </div>
+  <div className="col-md-6">
+    <label for="validationDefault05" className="form-label">Email</label>
+      <input type="email" className="form-control" id="validationDefault05" required/> 
+  </div>
+  <div className="col-md-6">
+    <label for="validationDefault03" className="form-label">Mobile no.</label>
+    <input type="tel" className="form-control" id="validationDefault03" required/>
+  </div>
+  
+  <div className="col-12">
+    <div className="form-check">
+      <input className="form-check-input" type="checkbox" value="" id="invalidCheck2" required/>
+      <label className="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  {/* <div className="col-12">
+    <button className="btn btn-primary" type="submit">Submit form</button>
+  </div> */}
+</form>
+        
       <button className='btn btn-success selected-button' onClick={()=>navigate('/payment', { state: { totalAmount } })}>Continue</button>
         </div>
     </div>

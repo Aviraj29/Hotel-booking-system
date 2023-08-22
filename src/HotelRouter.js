@@ -19,6 +19,7 @@ import ContactForm from './components/contact_form/ContactForm'
 import Reviews from './components/review/Reviews'
 import About from './components/about/About'
 import PaymentForm from './components/payment/PaymentForm'
+import ServiceSection from './components/services/ServiceSection'
 
 
 export default function HotelRouter() {
@@ -44,6 +45,8 @@ export default function HotelRouter() {
         <Route path='/contact' element={<ContactForm/>}/>
         <Route path='/review' element={<Reviews/>}/>
         <Route path='/about' element={<About/>}/>
+        <Route path='/services' element={<ServiceSection/>}/>
+
          
       </Route>
     </Routes>

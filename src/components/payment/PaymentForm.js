@@ -32,7 +32,7 @@ const handlePayLater = () => {
     }, 4000);
   }
 };
-
+ 
 const handlePayment = () => {
     if (
       // fullName &&

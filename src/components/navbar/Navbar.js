@@ -37,6 +37,9 @@ const navigate = useNavigate()
           <Link to="/event" className="nav-link " aria-current="page" >Event</Link>        
         </li> 
         <li className="nav-item">
+          <Link to="/services" className="nav-link " aria-current="page" >Services</Link>        
+        </li>
+        <li className="nav-item">
           <Link to="/contact" className="nav-link " aria-current="page" >Contact us</Link>        
         </li> 
         <li className="nav-item">

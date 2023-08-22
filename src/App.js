@@ -25,6 +25,7 @@ import HotelRouter from './HotelRouter';
 // import Icon from './components/services/Icon';
 // import EventForm from './components/event/EventForm';
 // import SpecialEvent from './components/event/SpecialEvent';
+// import ServiceSection from "./components/services/ServiceSection";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
     {/* <Footer/> */}
     {/* <About/> */}
     {/* <PaymentForm/> */}
+    {/* <ServiceSection/> */}
     
   
 
