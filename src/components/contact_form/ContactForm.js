@@ -37,21 +37,21 @@ const ContactForm = () => {
 
   return (
     <div>            
-      <div className="contact-form">
+      <div className="contact-form cu">
         <h2>Contact Us</h2>
         <form ref={form} onSubmit={sendEmail}>
         
 
         <label htmlFor="user_name">Full Name:</label>
-        <input type="text" placeholder='Full Name' name='user_name' required/>
+        <input className="cu" type="text" placeholder='Full Name' name='user_name' required/>
         <label htmlFor="user_email">Email:</label> 
-        <input type="email" placeholder='Email' name='user_email' required/> 
+        <input className="cu" type="email" placeholder='Email' name='user_email' required/> 
         <label htmlFor="phone">Phone No:</label> 
-        <input type="number" placeholder='Phone' name='phone' required/>      
+        <input className="cu" type="number" placeholder='Phone' name='phone' required/>      
 
          <div className="form-group">
             <label htmlFor="message ">Message : </label>
-            <textarea id="message " name="message" required></textarea>
+            <textarea className="cu" name="message" required></textarea>
           </div>
 
           <button className="contact-but" type="submit">Submit</button>
@@ -59,7 +59,7 @@ const ContactForm = () => {
         </form>
       </div>
 
-      <div className="contact-form">
+      <div className="contact-form cu">
           <h3>Get In Touch</h3>
           <div className="contact-info">
             <div className="contact-text">

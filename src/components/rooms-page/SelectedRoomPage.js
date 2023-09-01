@@ -81,11 +81,11 @@ export default function SelectedRoomPage(){
         <form className="row g-3">
   <div className="col-md-6">
     <label for="validationDefault01" className="form-label">First name</label>
-    <input type="text" className="form-control" id="validationDefault01" value="" required/>
+    <input type="text" className="form-control" id="validationDefault01" required/>
   </div>
   <div className="col-md-6">
     <label for="validationDefault02" className="form-label">Last name</label>
-    <input type="text" className="form-control" id="validationDefault02" value="" required/>
+    <input type="text" className="form-control" id="validationDefault02" required/>
   </div>
   <div className="col-md-6">
     <label for="validationDefault05" className="form-label">Email</label>

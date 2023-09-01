@@ -25,7 +25,8 @@ font-family: 'Times New Roman', Times, serif;
     /* position: relative; */
 }
 .row-cols-md-3{
-margin-left:11rem;
+    justify-content: space-evenly;
+/* margin-left:11rem; */
 
 }
 .col.w-5{

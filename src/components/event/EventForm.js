@@ -2,24 +2,30 @@
 
 import React from 'react'
 // import { useState } from 'react'
-import { useForm } from 'react-hook-form'
+// import { useForm } from 'react-hook-form'
 // import HotelLocations from './HotelLocations'
 import './EventForm.css' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
+import { useForm } from 'react-hook-form';
 library.add(faPhone, faEnvelope);
 
 
 export default function EventForm() {
-  const {register ,handleSubmit, formState : {errors}} = useForm()
+  const {register ,handleSubmit, formState : {errors, isValid}} = useForm();
 
   // const onClick = (e) =>{
   //   console.log(e)
   // }  
   const handleAlertClick = () => {
-    window.alert('Thank you for filling out our form. We will keep your information safe.We are working on your request and will get in touch as soon as possible. !');
+    if (isValid) {
+      window.alert('Thank you for filling out our form. We will keep your information safe. We are working on your request and will get in touch as soon as possible!');
+    } else {
+      window.alert('Please fill out all the required fields before submitting the form.');
+    }
   };
+  
  
   return (
    <>
@@ -37,7 +43,7 @@ export default function EventForm() {
 {/* info form starts here */}
   <div className="col-8">
   
-           <form  onSubmit={handleSubmit()}>
+           <form  onSubmit={handleSubmit(handleSubmit)}>
            <small style={{color:'red'}}>please enter all the fields to help you serve  better</small>
            <h3 className='event-title'> Event Details</h3>
           
@@ -106,7 +112,7 @@ required: 'please enter a valid Number Of Guests'
               <input  type="text"  className= "form-control " {...register("name", {
     required: 'please enter  a valid Full Name'
   })}/>
-  {errors.name && (<small className='text-danger'>{errors.date.message}</small>)}
+  {errors.name && (<small className='text-danger'>{errors.name.message}</small>)}
             </div> </div>
          
 
@@ -128,6 +134,9 @@ required: 'please enter a valid Number Of Guests'
   {errors.email && (<small className='text-danger'>{errors.email.message}</small>)}
             </div> </div>  
 
+          <div className="event-button">   
+          <button onClick={handleAlertClick}>Submit</button>
+          </div>
       
         </form>
         </div>
@@ -137,7 +146,7 @@ required: 'please enter a valid Number Of Guests'
 
 
 <div className="queries-con col-3">
-  <h6>For any queries, please don’t hesitate to contact us:</h6>
+  <h6>For any queries, please don,t hesitate to contact us:</h6>
 <br/>
   {/* npm install @fortawesome/fontawesome-svg-core
 npm install @fortawesome/free-solid-svg-icons
@@ -152,11 +161,7 @@ npm install @fortawesome/react-fontawesome */}
       </ul>
   </div>
 
-  <div className="event-button ">   
   
-<button  onClick={handleAlertClick}>Submit</button>
-
-</div>
         </div>
       </div>
 

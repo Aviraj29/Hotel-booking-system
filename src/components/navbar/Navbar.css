@@ -2,10 +2,11 @@
 .navbar-expand-lg{
     width: 100%; 
     background-color: lightcoral; 
+    opacity: 0.75;
     font-size: larger;
     font-weight: 600;
 }
-.navbar-expand-lg a, li{
+.navbar-expand-lg a{
     color: white;
 }
 ul.dropdown-menu.show{

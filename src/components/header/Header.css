@@ -1,5 +1,5 @@
 .bg_image{
-    background: url(../../../public/images/Hotel\ front.jpg);
+    background: url(../../../public/images/Screenshot-2019-05-01-at-13.07.45.webp); 
     width: 100%;
     height: 755px;
     background-size: cover;
@@ -15,20 +15,25 @@ header{
     z-index: 1000;
     position: relative;
 }
-.detail{
+.detail{ 
     height: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: larger;
-    font-weight: 600;
+    /* font-weight: 600; */
 }
 .detail ul{
     display: flex;
     margin-top: 15px;
+    padding-left: 10px;
+    color: darkslategray;
 }
 .detail li{
     display: flex;
     align-items: center;
     padding-right: 15px;
+}
+.hotel{
+    padding-right: 45px;
 }

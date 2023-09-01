@@ -103,8 +103,8 @@ const clearForm = () => {
 
       <div className="input-group">
       <label className='payment-label'>Total Price :</label>
-      <input
-        type="number"
+      <input className='pf'
+        type="number" 
         value={totalAmount || totalPriceAfterDiscount} 
         onChange={(e) => setTotalPrice(e.target.value)}
         placeholder="Enter the total price" 
@@ -196,7 +196,7 @@ const clearForm = () => {
 
               <div className="input-group">
                 <label className='payment-label'>Enter Card Number:</label>
-                <input
+                <input className='pf'
                   type="text"
                   value={cardNumber}
                   onChange={(e) => setCardNumber(e.target.value)}/>
@@ -210,7 +210,7 @@ const clearForm = () => {
             <div className="input-group">
               <label className='payment-label'>Enter UPI ID:</label>
              
-              <input
+              <input className='pf'
               type="text"
               value={upiId}
               onChange={(e) => setUPIId(e.target.value)}
@@ -329,7 +329,7 @@ Book Now & Pay Later
             <div className="input-group">
               <label className='payment-label'>Enter UPI ID:</label>
 
-              <input
+              <input className='pf'
                 type="text"
                 value={upiId}
                 onChange={(e) => setUPIId(e.target.value)}
@@ -382,251 +382,3 @@ Pay Now
 };  
 
 export default PaymentForm; 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

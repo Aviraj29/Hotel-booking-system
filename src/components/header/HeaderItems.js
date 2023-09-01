@@ -1,5 +1,5 @@
 
 export default function HeaderItems(props) {
-  return <li> <i className={props.icon}></i>{props.headerName}</li>
+  return <li> <a style={{color:props.color}} href={props.link} target="_blank" rel="noopener noreferrer" ><i className={props.icon}></i></a></li>
   
 }

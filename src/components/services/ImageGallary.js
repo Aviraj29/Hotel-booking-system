@@ -14,7 +14,7 @@ import './ImageGallery.css';
     <div className='service-container'>         
    {/*  */}
     <button className="show-button" onClick={handleShowMoreLess}>        
-        {showImages === 10 ? 'Show More' : 'Show Less'}         
+        {showImages === 10 ? 'Show More⇩' : 'Show Less⇧'}         
     </button>                 
 
     <h1 className='services'>Services</h1>  
