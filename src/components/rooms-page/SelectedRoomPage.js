@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { useForm , Controller } from 'react-hook-form';
 
 export default function SelectedRoomPage(){
   const location = useLocation();
@@ -12,9 +13,29 @@ export default function SelectedRoomPage(){
   // const selectedOffer = location.state?.selectedOffer;
 
   const [roomCount, setRoomCount] = useState(1);
+  const {control, handleSubmit, formState:{errors}} = useForm();
   // if (!selectedOffer) {
   //   return <div>No offer selected.</div>;
   // }
+  const onSubmit = (data)=>{
+    if(isFormValid(data)){
+      navigate('/payment',{state: {totalAmount}})
+    }
+    else{
+      console.log('Form is not valid')
+    }
+  }
+  const isFormValid = (data) => {
+    // Implement your form validation logic here using the 'data' object.
+    // Return true if the form is valid, false otherwise.
+    return (
+      data.firstName 
+      // data.lastName &&
+      // data.email &&
+      // data.mobile &&
+      // data.agreeToTerms
+    );
+  };
   if (!selectedRoom) {
     return <div>No room selected.</div>;
   } 
@@ -78,10 +99,18 @@ export default function SelectedRoomPage(){
 
         <div className="guest-f mt-3">
         
-        <form className="row g-3">
+        <form className="row g-3" onSubmit={handleSubmit(onSubmit)}>
   <div className="col-md-6">
     <label for="validationDefault01" className="form-label">First name</label>
-    <input type="text" className="form-control" id="validationDefault01" required/>
+    {/* <input type="text" className="form-control" id="validationDefault01" required/> */}
+    <Controller
+                name="firstName"
+                control={control}
+                // defaultValue=""
+                render={({ field }) => <input {...field} type="text" className="form-control" id="firstName" required />}
+              />
+                {errors.firstName && <p className="text-danger">First name is required</p>}
+
   </div>
   <div className="col-md-6">
     <label for="validationDefault02" className="form-label">Last name</label>
@@ -109,7 +138,7 @@ export default function SelectedRoomPage(){
   </div> */}
 </form>
         
-      <button className='btn btn-success selected-button' onClick={()=>navigate('/payment', { state: { totalAmount } })}>Continue</button>
+      <button className='btn btn-success selected-button' type='submit' onClick={handleSubmit(onSubmit)}>Continue</button>
         </div>
     </div>
     </>
